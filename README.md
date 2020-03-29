@@ -1,7 +1,3 @@
-# Gatsby Starter Amsterdam
+# Ammiranda.com
 
-A basic starter using **Gatsby Theme Amsterdam**.
-
-- [Theme Documentation](https://github.com/ryanwiemer/gatsby-theme-amsterdam)
-- [Theme Website](https://amsterdam.netlify.com/)
-- [Demo](https://gatsby-starter-amsterdam.netlify.com/)
+![Upload Website](https://github.com/ammiranda/ammiranda.com/workflows/Upload%20Website/badge.svg?branch=master)
