@@ -1,26 +1,41 @@
 module.exports = {
   siteMetadata: {
-    title: 'John Doe',
-    description:
-      'John Doe is a lifestyle photographer based in San Francisco, CA',
+    title: 'Alex Miranda',
+    description: 'Alex Miranda is a software engineer based in Seattle, WA.',
     url: 'https://gatsby-starter-amsterdam.netlify.com',
-    author: 'John Doe',
+    author: 'Alex Miranda',
     image: 'https://gatsby-starter-amsterdam.netlify.com/og-image.jpg',
-    intro: 'John Doe is a lifestyle photographer based in San Francisco, CA',
+    intro: 'Alex Miranda is a software engineer based in Seattle, WA.',
     menuLinks: [
       {
-        name: 'John Doe',
+        name: 'Alex Miranda',
         slug: '/',
       },
       {
-        name: 'Example Page',
-        slug: '/example/',
+        name: 'About',
+        slug: '/about/',
+      },
+      {
+        name: 'Contact',
+        slug: '/contact/',
       },
     ],
     footerLinks: [
       {
-        name: 'Gatsby Theme Amsterdam',
-        url: 'https://github.com/ryanwiemer/gatsby-theme-amsterdam',
+        name: 'Email',
+        url: 'mailto:alexandermichaelmiranda@gmail.com',
+      },
+      {
+        name: 'Linkedin',
+        url: 'https://linkedin.com/in/alexmmiranda',
+      },
+      {
+        name: 'Github',
+        url: 'https://github.com/ammiranda',
+      },
+      {
+        name: 'Instagram',
+        url: 'https://instagram.com/alexandermmir',
       },
     ],
   },
