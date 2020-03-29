@@ -42,7 +42,10 @@ module.exports = {
   plugins: [
     {
       resolve: 'gatsby-theme-amsterdam',
-      options: {},
+      options: {
+        colorToggle: false,
+        grid: 'list',
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
