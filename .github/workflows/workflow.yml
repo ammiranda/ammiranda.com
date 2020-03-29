@@ -6,11 +6,11 @@ on:
       - master
 
 jobs:
-  buiild:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [10.x, 12.x]
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v1
