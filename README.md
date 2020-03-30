@@ -1,3 +1,3 @@
 # Ammiranda.com
 
-![Upload Website](https://github.com/ammiranda/ammiranda.com/workflows/Upload%20Website/badge.svg?branch=master)
+![build](https://github.com/ammiranda/ammiranda.com/workflows/build/badge.svg?branch=master)
