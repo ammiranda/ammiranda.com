@@ -59,5 +59,11 @@ module.exports = {
         icon: require.resolve('./src/images/favicon.png'),
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-162357221-1',
+      },
+    },
   ],
 }
