@@ -41,6 +41,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-162357221-1',
+      },
+    },
+    {
       resolve: 'gatsby-theme-amsterdam',
       options: {
         colorToggle: false,
@@ -57,12 +63,6 @@ module.exports = {
         start_url: `/`,
         display: `standalone`,
         icon: require.resolve('./src/images/favicon.png'),
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-162357221-1',
       },
     },
   ],
