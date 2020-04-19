@@ -57,13 +57,31 @@ const ExamplePage = ({ data }) => {
             <a href="mailto:alexandermichaelmiranda@gmail.com">Email</a>
           </li>
           <li>
-            <a href="https://linkedin.com/in/alexmmiranda">Linkedin</a>
+            <a
+              href="https://linkedin.com/in/alexmmiranda"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Linkedin
+            </a>
           </li>
           <li>
-            <a href="https://github.com/ammiranda">Github</a>
+            <a
+              href="https://github.com/ammiranda"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Github
+            </a>
           </li>
           <li>
-            <a href="https://instagram.com/alexandermmir">Instagram</a>
+            <a
+              href="https://instagram.com/alexandermmir"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Instagram
+            </a>
           </li>
         </ul>
       </Content>
