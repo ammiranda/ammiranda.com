@@ -12,7 +12,8 @@
     "check-pretty": "prettier -l {,src/**/}*.{js,jsx,json,css,scss}",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "yarn run lint:css && yarn run lint:js && yarn run check-pretty",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby-plugin-s3 deploy --yes"
   },
   "dependencies": {
     "gatsby": "^2.19.12",
