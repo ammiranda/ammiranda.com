@@ -18,7 +18,7 @@ jobs:
           TARGET_ADDRESS: ${{ secrets.TARGET_ADDRESS }}
       - run: npm test
       - name: Deploy and invalidate cache
-        run: npm deploy && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRO_ID }} --paths \"/*\""
+        run: npm deploy && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRO_ID }} --paths \"/*\"
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
