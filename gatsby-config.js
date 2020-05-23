@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Alex Miranda',
     description: 'Alex Miranda is a software engineer based in Seattle, WA.',
-    url: 'https://www.ammiranda.com',
+    url: targetAddress.toString(),
     author: 'Alex Miranda',
     intro: 'Alex Miranda is a software engineer based in Seattle, WA.',
     menuLinks: [
