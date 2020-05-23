@@ -2,9 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Alex Miranda',
     description: 'Alex Miranda is a software engineer based in Seattle, WA.',
-    url: 'https://gatsby-starter-amsterdam.netlify.com',
+    url: 'https://www.ammiranda.com',
     author: 'Alex Miranda',
-    image: 'https://gatsby-starter-amsterdam.netlify.com/og-image.jpg',
     intro: 'Alex Miranda is a software engineer based in Seattle, WA.',
     menuLinks: [
       {
@@ -50,7 +49,7 @@ module.exports = {
       resolve: 'gatsby-theme-amsterdam',
       options: {
         colorToggle: false,
-        grid: 'list',
+        grid: 'grid',
       },
     },
     {
