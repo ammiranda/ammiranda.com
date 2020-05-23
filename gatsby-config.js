@@ -1,8 +1,10 @@
+const targetAddress = new URL(process.env.TARGET_ADDRESS || `https://blog.com`)
+
 module.exports = {
   siteMetadata: {
     title: 'Alex Miranda',
     description: 'Alex Miranda is a software engineer based in Seattle, WA.',
-    url: 'https://www.ammiranda.com',
+    url: targetAddress.toString(),
     author: 'Alex Miranda',
     intro: 'Alex Miranda is a software engineer based in Seattle, WA.',
     menuLinks: [
@@ -62,6 +64,22 @@ module.exports = {
         start_url: `/`,
         display: `standalone`,
         icon: require.resolve('./src/images/favicon.png'),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: process.env.S3_BUCKET_NAME || 'fake bucket',
+        region: process.env.AWS_REGION,
+        protocol: targetAddress.protocol.slice(0, -1),
+        hostname: targetAddress.hostname,
+        acl: null,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: targetAddress.href.slice(0, -1),
       },
     },
   ],
