@@ -23,7 +23,11 @@ jobs:
       - name: Gatsby build
         run: npm run build --if-present
       - run: npm test
-      - name: Configure AWSCLI
-        run: aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID &&  aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY && aws configure set default.region $AWS_REGION
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: $AWS_REGION
       - name: Deploy and invalidate cache
         run: npm run deploy && aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRO_ID --paths \"/*\"
