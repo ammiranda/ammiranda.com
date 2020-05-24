@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install
       - name: Gatsby build
-        run: npm run build --if-present
+        run: npm run build --if-present && echo ${{ secrets.TARGET_ADDRESS }}
         env:
           TARGET_ADDRESS: ${{ secrets.TARGET_ADDRESS }}
       - run: npm test

@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: process.env.S3_BUCKET_NAME || 'fake bucket',
+        bucketName: process.env.AWS_S3_BUCKET || 'fake bucket',
         region: process.env.AWS_REGION,
         protocol: targetAddress.protocol.slice(0, -1),
         hostname: targetAddress.hostname,
