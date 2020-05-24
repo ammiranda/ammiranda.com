@@ -24,4 +24,4 @@ jobs:
         run: npm run build --if-present && echo 'moo' $TARGET_ADDRESS
       - run: npm test && echo $AWS_S3_BUCKET
       - name: Deploy and invalidate cache
-        run: npm run deploy && aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRO_ID --paths \"/*\"
+        run: gatsby-plugin-s3 deploy --yes && aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRO_ID --paths \"/*\"
