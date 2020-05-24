@@ -1,3 +1,4 @@
+require('dotenv').config()
 const targetAddress = new URL(process.env.TARGET_ADDRESS || `https://blog.com`)
 
 module.exports = {
