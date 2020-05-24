@@ -1,4 +1,4 @@
-name: 'deploy'
+name: deploy
 
 on:
   push:
@@ -7,24 +7,19 @@ on:
 
 jobs:
   deploy:
+    env:
+      TARGET_ADDRESS: ${{ secrets.TARGET_ADDRESS }}
+      AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_REGION: us-west-2
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v1
       - run: npm install
       - name: Gatsby build
-        env:
-          TARGET_ADDRESS: ${{ secrets.TARGET_ADDRESS }}
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: 'us-west-2'
         run: npm run build --if-present && echo ${{ secrets.TARGET_ADDRESS }}
       - run: npm test
       - name: Deploy and invalidate cache
-        env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: 'us-west-2'
         run: npm run deploy && aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRO_ID }} --paths \"/*\"
