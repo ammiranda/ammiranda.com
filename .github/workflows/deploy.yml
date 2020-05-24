@@ -21,7 +21,8 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install
       - name: Gatsby build
-        run: npm run build --if-present && echo 'moo' $TARGET_ADDRESS
-      - run: npm test && echo $AWS_S3_BUCKET
+        run: npm run build --if-present
+      - run: npm test
+      - run: aws configure --profile default <<-EOF > /dev/null 2>&1 $AWS_ACCESS_KEY_ID $AWS_SECRET_ACCESS_KEY $AWS_REGION json
       - name: Deploy and invalidate cache
         run: npm run deploy && aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRO_ID --paths \"/*\"
