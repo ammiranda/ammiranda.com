@@ -49,10 +49,15 @@ const ExamplePage = ({ data }) => {
       <Title>About</Title>
       <Content>
         <p>
-          Alex Miranda is a software engineer that lives in Seattle, WA. He
-          loves the outdoors as well as traveling the world.
+          Hi, welcome to my site! I am Alex Miranda a software engineer based in
+          Seattle, WA. I enjoy photography, traveling, reading and a myriad of
+          other hobbies/topics. All of the photos on this site are travel
+          pictures I took of some of my favorite places. I hope the insights I
+          share here are useful to others. I would love to hear about awesome
+          happenings in the tech space either here in the PNW or elsewhere. My
+          resume is posted below:
+          <a href="/Alex_Miranda_Resume_Jan_20_20.pdf">Resume</a>
         </p>
-        <a href="/Alex_Miranda_Resume_Jan_20_20.pdf">Resume</a>
       </Content>
     </Container>
   )
