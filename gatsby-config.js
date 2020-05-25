@@ -97,6 +97,7 @@ module.exports = {
             "'self' 'unsafe-inline' 'unsafe-eval' www.google-analytics.com",
           'style-src': "'self' 'unsafe-inline'",
           'img-src': "'self' data: www.google-analytics.com",
+          'frame-ancestors': "'self'",
           // you can add your directives or override defaults
         },
       },
