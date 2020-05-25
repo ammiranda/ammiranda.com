@@ -52,6 +52,7 @@ const ExamplePage = ({ data }) => {
           Alex Miranda is a software engineer that lives in Seattle, WA. He
           loves the outdoors as well as traveling the world.
         </p>
+        <a href="/Alex_Miranda_Resume_Jan_20_20.pdf">Resume</a>
       </Content>
     </Container>
   )
