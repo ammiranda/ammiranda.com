@@ -24,6 +24,10 @@ module.exports = {
     ],
     footerLinks: [
       {
+        name: 'Resume',
+        url: '/Alex_Miranda_Resume_Jan_20_20.pdf',
+      },
+      {
         name: 'Email',
         url: 'mailto:alexandermichaelmiranda@gmail.com',
       },

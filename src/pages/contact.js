@@ -54,7 +54,13 @@ const ExamplePage = ({ data }) => {
         <p>Let's chat!</p>
         <ul>
           <li>
-            <a href="/Alex_Miranda_Resume_Jan_20_20.pdf">Resume</a>
+            <a
+              href="/Alex_Miranda_Resume_Jan_20_20.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Resume
+            </a>
           </li>
           <li>
             <a href="mailto:alexandermichaelmiranda@gmail.com">Email</a>
