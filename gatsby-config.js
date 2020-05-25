@@ -21,6 +21,10 @@ module.exports = {
         name: 'Contact',
         slug: '/contact/',
       },
+      {
+        name: 'Resume',
+        slug: '/Alex_Miranda_Resume_Jan_20_20.pdf',
+      },
     ],
     footerLinks: [
       {
@@ -97,6 +101,20 @@ module.exports = {
           'img-src': "'self' data: www.google-analytics.com",
           // you can add your directives or override defaults
         },
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+              rel: 'nofollow',
+            },
+          },
+        ],
       },
     },
   ],
