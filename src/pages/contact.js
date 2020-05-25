@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Container from 'gatsby-theme-amsterdam/src/components/Container'
 import SEO from 'gatsby-theme-amsterdam/src/components/SEO'
 import styled from '@emotion/styled'
