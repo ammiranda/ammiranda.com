@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Container from 'gatsby-theme-amsterdam/src/components/Container'
 import SEO from 'gatsby-theme-amsterdam/src/components/SEO'
 import styled from '@emotion/styled'
@@ -54,11 +55,10 @@ const ExamplePage = ({ data }) => {
           other hobbies/topics. All of the photos on this site are travel
           pictures I took of some of my favorite places. I hope the insights I
           share here are useful to others. I would love to hear about awesome
-          happenings in the tech space either here in the PNW or elsewhere. My
-          resume is posted below. Thanks!
+          happenings in the tech space either here in the PNW or elsewhere.
         </p>
         <p>
-          <a href="/Alex_Miranda_Resume_Jan_20_20.pdf">Resume</a>
+          <Link to="/contact/">Contact me</Link>
         </p>
       </Content>
     </Container>
