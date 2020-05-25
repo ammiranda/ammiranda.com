@@ -55,7 +55,7 @@ const ExamplePage = ({ data }) => {
           pictures I took of some of my favorite places. I hope the insights I
           share here are useful to others. I would love to hear about awesome
           happenings in the tech space either here in the PNW or elsewhere. My
-          resume is posted below:
+          resume is posted below. Thanks!
           <a href="/Alex_Miranda_Resume_Jan_20_20.pdf">Resume</a>
         </p>
       </Content>
