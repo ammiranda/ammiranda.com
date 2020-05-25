@@ -92,6 +92,7 @@ module.exports = {
         mergeStyleHashes: true, // you can disable styles sha256 hashes
         mergeDefaultDirectives: true,
         directives: {
+          'default-src': "'none'",
           'script-src':
             "'self' 'unsafe-inline' 'unsafe-eval' www.google-analytics.com",
           'style-src': "'self' 'unsafe-inline'",
