@@ -21,10 +21,6 @@ module.exports = {
         name: 'Contact',
         slug: '/contact/',
       },
-      {
-        name: 'Resume',
-        slug: '/Alex_Miranda_Resume_Jan_20_20.pdf',
-      },
     ],
     footerLinks: [
       {
