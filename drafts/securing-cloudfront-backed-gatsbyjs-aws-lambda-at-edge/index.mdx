@@ -1,0 +1,31 @@
+---
+title: Securing Cloudfront backed Gatsby.js website with AWS Lambda@Edge
+date: 2020-05-24
+cover: cover.jpg
+tags: [aws, s3, cloudfront, security]
+---
+
+### Summary
+
+I have set up my portfolio site (the one you are on) to be served via s3 fronted by the Cloudfront CDN.
+ One downside when using Cloudfront is that it strips most headers prior to delivering the content to the end user.
+ Several of the headers stripped or surpressed ensure greater browser security. This post will go over the steps I took
+ to get an A+ grade from [Mozilla's Observatory](https://observatory.mozilla.org/) security auditing tool.
+
+ ### All About Security Headers
+
+ The list of headers which prompt browsers to prevent [downgrade attacks](https://en.wikipedia.org/wiki/Downgrade_attack), [XSS attacks](https://infosec.mozilla.org/guidelines/web_security#content-security-policy), and
+ other attack vectors are listed below:
+
+ * X-Content-Security-Policy
+ * Strict-Transport-Security
+ * X-Content-Type-Options
+ * X-XSS-Protection
+ * Referrer-Policy
+ * X-Frame-Options
+
+ ### The Solution
+
+Cloudfront strips these vital headers despite how we configure our Gatsby.js site. So the main workaround for this limitation
+is to use AWS [Lambda@Edge]() which is a lambda function that can be invoked at Cloudfront edges so the headers will be 
+provided between the Cloudfront edge and the end user.
