@@ -39,10 +39,6 @@ module.exports = {
         name: 'Github',
         url: 'https://github.com/ammiranda',
       },
-      {
-        name: 'Instagram',
-        url: 'https://instagram.com/alexandermmir',
-      },
     ],
   },
   plugins: [

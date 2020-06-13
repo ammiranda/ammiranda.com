@@ -83,15 +83,6 @@ const ExamplePage = ({ data }) => {
               Github
             </a>
           </li>
-          <li>
-            <a
-              href="https://instagram.com/alexandermmir"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Instagram
-            </a>
-          </li>
         </ul>
       </Content>
     </Container>
