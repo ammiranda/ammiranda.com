@@ -1,4 +1,5 @@
 require('dotenv').config()
+const { URL } = require('url')
 const targetAddress = new URL(process.env.TARGET_ADDRESS || `https://blog.com`)
 
 module.exports = {
@@ -38,10 +39,6 @@ module.exports = {
       {
         name: 'Github',
         url: 'https://github.com/ammiranda',
-      },
-      {
-        name: 'Instagram',
-        url: 'https://instagram.com/alexandermmir',
       },
     ],
   },
