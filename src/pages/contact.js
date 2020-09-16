@@ -55,7 +55,7 @@ const ExamplePage = ({ data }) => {
         <ul>
           <li>
             <a
-              href="/Alex_Miranda_Resume_Jan_20_20.pdf"
+              href="/Alex_Miranda_resume_09_14_2020.pdf"
               rel="noopener noreferrer"
               target="_blank"
             >
