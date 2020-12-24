@@ -4,4 +4,4 @@
 
 ## Background
 
-Source code for Alex Miranda's personal website built using [GatsbyJS](https://www.gatsbyjs.org/) with the [gatsby-starter-amsterdam](https://amsterdam.netlify.com/docs/) starter.
+Source code for Alex Miranda's personal website built using [Hugo](https://gohugo.io/).
