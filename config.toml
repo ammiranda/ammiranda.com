@@ -1,4 +1,4 @@
-baseURL = "http://ammiranda.com"
+baseURL = "https://ammiranda.com"
 languageCode = "en-us"
 title = "alexmiranda"
 
@@ -41,21 +41,37 @@ pygmentsCodeFencesGuessSyntax = true
 	tag = "tags"
 	author = "authors"
 
+[[menu.main]]
+	name = "About"
+	weight = 1
+	url = "about/"
+[[menu.main]]
+	name = "Blog"
+	weight = 2
+	url = "posts/"
+[[menu.main]]
+	name = "Contact me"
+	weight = 5
+	url = "contact/"
+
 [[params.social]]
 	name = "Github"
 	icon = "fa fa-github"
 	weight = 1
 	url = "https://github.com/ammiranda/"
+	target="_blank"
 [[params.social]]
 	name = "Twitter"
 	icon = "fa fa-twitter"
 	weight = 3
 	url = "https://twitter.com/amiranda222"
+	target="_blank"
 [[params.social]]
 	name = "LinkedIn"
 	icon = "fa fa-linkedin"
 	weight = 4
 	url = "https://www.linkedin.com/in/alexmmiranda"
+	target="_blank"
 [[params.social]]
 	name = "RSS"
 	icon = "fa fa-rss"
@@ -63,23 +79,4 @@ pygmentsCodeFencesGuessSyntax = true
 	url = "https://ammiranda.com/index.xml"
 	rel = "alternate"
 	type = "application/rss+xml"
-
-[languages]
-	[languages.en]
-		languageName = "English"
-
-	[languages.en.menu]
-		[[languages.en.menu.main]]
-		name = "About"
-		weight = 1
-		url = "about/"
-
-		# [[languages.en.menu.main]]
-		# name = "Blog"
-		# weight = 2
-		# url = "posts/"
-
-		[[languages.en.menu.main]]
-		name = "Contact me"
-		weight = 5
-		url = "contact/"
+	target="_blank"
