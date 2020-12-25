@@ -1,4 +1,4 @@
-baseURL = "http://ammiranda.com"
+baseURL = "https://ammiranda.com/"
 languageCode = "en-us"
 title = "alexmiranda"
 
@@ -72,14 +72,14 @@ pygmentsCodeFencesGuessSyntax = true
 		[[languages.en.menu.main]]
 		name = "About"
 		weight = 1
-		url = "about/"
+		url = "/about/"
 
-		# [[languages.en.menu.main]]
-		# name = "Blog"
-		# weight = 2
-		# url = "posts/"
+		[[languages.en.menu.main]]
+		name = "Blog"
+		weight = 2
+		url = "/posts/"
 
 		[[languages.en.menu.main]]
 		name = "Contact me"
 		weight = 5
-		url = "contact/"
+		url = "/contact/"
