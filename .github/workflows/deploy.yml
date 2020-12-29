@@ -21,8 +21,8 @@ jobs:
           HUGO_VERSION: 0.79.1
       - name: Hugo Build
         run: $HOME/hugo -v
-      - name: Deploy to S3 and invalidate Cloudfront distro
-        uses: lbertenasco/s3-deploy@v1
+      - name: Deploy to S3
+        uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
