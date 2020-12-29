@@ -9,10 +9,6 @@ jobs:
   build:
     name: Build and Deploy
     runs-on: ubuntu-latest
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
     steps:
       - uses: actions/checkout@v1
       - name: Install Hugo
@@ -28,7 +24,18 @@ jobs:
       - name: Deploy to S3 and invalidate Cloudfront distro
         uses: lbertenasco/s3-deploy@v1
         with:
-          folder: public
-          bucket: ${{ secrets.AWS_S3_BUCKET }}
-          dist-id: ${{ secrets.CLOUDFRONT_DISTRO_ID }}
-          invalidation: / *
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'us-west-2'
+          SOURCE_DIR: 'public'
+      - name: Invalidate Cloudfront distro
+        uses: chetan/invalidate-cloudfront-action@master
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'us-west-2'
+          PATHS: '/*'
+          DISTRIBUTION: ${{ secrets.CLOUDFRONT_DISTRO_ID }}
