@@ -27,7 +27,7 @@ jobs:
         run: $HOME/hugo -v
       - name: Deploy to S3 and invalidate Cloudfront distro
         uses: lbertenasco/s3-deploy@v1
-	      with:
+        with:
           folder: public
           bucket: ${{ secrets.AWS_S3_BUCKET }}
           dist-id: ${{ secrets.CLOUDFRONT_DISTRO_ID }}
