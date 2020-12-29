@@ -1,10 +1,11 @@
 +++
 title = "Contact"
 slug = "contact"
-thumbnail = "images/tn.png"
 description = "contact"
 +++
 
-## Want Contact?
+Feel free to contact me through my socials. I love learning about new exciting projects!
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/naro143/hugo-coder-portfolio/issues/new) or [ask me on Twitter](https://twitter.com/naro143).
+- [Linkedin](https://linkedin.com/in/alexmmiranda)
+- [Github](https://github.com/ammiranda)
+- [Twitter](https://twitter.com/amiranda222)

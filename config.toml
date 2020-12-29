@@ -12,11 +12,13 @@ pygmentsStyle = "b2"
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 
+googleAnalytics = "UA-162357221-1"
+
 [params]
 	author = "Alex Miranda"
 	description = "Alex Miranda's personal website"
 	keywords = "blog,developer,personal"
-	info = "Full Stack Web Engineer"
+	info = "Full Stack Software Engineer"
 	
 	dateFormat = "January 2, 2006"
 	since = 2020
@@ -45,10 +47,10 @@ pygmentsCodeFencesGuessSyntax = true
 	name = "About"
 	weight = 1
 	url = "about"
-[[menu.main]]
-	name = "Blog"
-	weight = 2
-	url = "posts"
+# [[menu.main]]
+#	name = "Blog"
+#	weight = 2
+#	url = "posts"
 [[menu.main]]
 	name = "Contact me"
 	weight = 5
