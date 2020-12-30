@@ -2,6 +2,7 @@
 title = "Contact"
 slug = "contact"
 description = "contact"
+type = "default"
 +++
 
 Feel free to contact me through my socials. I love learning about new exciting projects!
