@@ -47,6 +47,7 @@ googleAnalytics = "UA-162357221-1"
 	imgsrc = ["'self'"]
 	objectsrc = ["'none'"]
 	stylesrc = ["'self'",
+		"'unsafe-inline'",
 		"https://fonts.googleapis.com/",
 		"https://cdn.jsdelivr.net/"]
 	scriptsrc = ["'self'",
