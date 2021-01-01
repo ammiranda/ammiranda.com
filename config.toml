@@ -19,6 +19,7 @@ googleAnalytics = "UA-162357221-1"
 	description = "Alex Miranda's personal website"
 	keywords = "blog,developer,personal"
 	info = "Full Stack Software Engineer"
+	avatarURL = "images/avatar.jpg"
 	
 	dateFormat = "January 2, 2006"
 	since = 2020
@@ -47,11 +48,9 @@ googleAnalytics = "UA-162357221-1"
 	imgsrc = ["'self'"]
 	objectsrc = ["'none'"]
 	stylesrc = ["'self'",
-		"'unsafe-inline'",
 		"https://fonts.googleapis.com/",
 		"https://cdn.jsdelivr.net/"]
 	scriptsrc = ["'self'",
-		"'unsafe-inline'",
 		"https://www.google-analytics.com"]
 	prefetchsrc = ["'self'"]
 
