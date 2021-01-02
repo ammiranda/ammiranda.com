@@ -17,12 +17,13 @@
     </item>
     
     <item>
-      <title>About Alex</title>
+      <title>About me</title>
       <link>https://ammiranda.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ammiranda.com/about/</guid>
-      <description>I am a software engineer that works on the web.</description>
+      <description>My name is Alex. I am a software engineer that works on the web. I currently work at iStreamplanet building APIs using Golang. In previous roles I have built single page applications (SPAs) using React, and Backbone.
+I am passionate about data visualization, web privacy/security, artifical intelligence, and decentralized governance (i.e. blockchain). I value clear and concise communication which is a skill I plan to hone by writing content for this site.</description>
     </item>
     
     <item>
@@ -31,8 +32,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ammiranda.com/contact/</guid>
-      <description>Feel free to contact me through my socials. I love learning about new exciting projects!
- Linkedin Github Twitter  </description>
+      <description>Feel free to contact me. I love learning about interesting projects (preferably open source).
+ Email Linkedin Github Twitter  </description>
     </item>
     
   </channel>
