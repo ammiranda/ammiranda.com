@@ -74,6 +74,10 @@ googleAnalytics = "UA-162357221-1"
 	name = "Contact me"
 	weight = 5
 	url = "contact"
+[[menu.main]]
+	name = "Resume"
+	weight = 6
+	url = "resume.pdf"
 
 [[params.social]]
 	name = "Github"
