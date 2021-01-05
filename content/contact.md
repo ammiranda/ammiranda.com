@@ -12,4 +12,4 @@ Feel free to contact me. I love learning about interesting projects (preferably 
 - [Github](https://github.com/ammiranda)
 - [Twitter](https://twitter.com/amiranda222)
 
-If you want to encrypt your email please use my [GPG key](/gpg.txt).
+If you want to encrypt your email please use my [PGP key](/pgp.txt).
