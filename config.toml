@@ -74,6 +74,10 @@ pygmentsCodeFencesGuessSyntax = true
 	name = "Resume"
 	weight = 6
 	url = "resume.pdf"
+[[menu.main]]
+	name = "GPG Key"
+	weight = 7
+	url = "gpg.txt"
 
 [[params.social]]
 	name = "Github"
