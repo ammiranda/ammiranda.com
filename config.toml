@@ -8,7 +8,7 @@ defaultContentLanguage = "en"
 
 paginate = 20
 
-pygmentsStyle = "b2"
+pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 
@@ -24,13 +24,13 @@ pygmentsCodeFencesGuessSyntax = true
 
 	colorScheme = "auto"
 
-	hideColorSchemeToggle = false
+	hideColorSchemeToggle = true
 
 	maxSeeAlsoItems = 5
 
 	enableTwemoji = false
 
-	customCSS = ["css/all.css"]
+	customCSS = ["css/all.css", "css/syntax.css"]
 
 	customSCSS = []
 
@@ -62,21 +62,21 @@ pygmentsCodeFencesGuessSyntax = true
 	name = "About"
 	weight = 1
 	url = "about"
-# [[menu.main]]
-#	name = "Blog"
-#	weight = 2
-#	url = "posts"
+[[menu.main]]
+	name = "Blog"
+	weight = 2
+	url = "posts"
 [[menu.main]]
 	name = "Contact me"
-	weight = 5
+	weight = 3
 	url = "contact"
 [[menu.main]]
 	name = "Resume"
-	weight = 6
+	weight = 4
 	url = "resume.pdf"
 [[menu.main]]
 	name = "PGP Key"
-	weight = 7
+	weight = 5
 	url = "pgp.txt"
 
 [[params.social]]
