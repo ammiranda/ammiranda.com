@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Clone theme for build
-        run: git clone https://github.com/ammiranda/hugo-coder.git themes/hugo-coder
+      - name: Git submodule init
+        run: git submodule init
+      - name: Git submodule update
+        run: git submodule update
       - name: Build Hugo
         uses: lowply/build-hugo@v0.79.0
