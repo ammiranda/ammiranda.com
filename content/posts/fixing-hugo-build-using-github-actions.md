@@ -12,7 +12,7 @@ I created this site using [Hugo](https://gohugo.io/) with the [Hugo-Coder](https
 
 ## The Problem
 
-I created a build workflow file in the repo to utilize Github Actions.
+I created a build workflow file in the repository to utilize Github Actions.
 
 ```yaml
 name: build
@@ -37,7 +37,7 @@ The warnings show that the hugo build process does not have the page primitives 
 
 ## The Solution
 
-First I had to determine why the hugo warnings happened. I installed the theme using [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) within my project's `themes` directory. I noticed that the repo on Github did not have the `themes/hugo-coder` directory populated but merely showed that it was a link to the theme repository referenced in the `.gitmodules` file. However I had cloned the theme repository into my site's repository I had on my local machine which provided the page primitives the generation process needed. Through reviewing the `git submodule` documentation I noticed this section:
+First I had to determine why the hugo warnings happened. I installed the theme using [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) within my project's `themes` directory. I noticed that the repository on Github did not have the `themes/hugo-coder` directory populated but merely showed that it was a link to the theme repository referenced in the `.gitmodules` file. However I had cloned the theme repository into my site's repository I had on my local machine which provided the page primitives the generation process needed. Through reviewing the `git submodule` documentation I noticed this section:
 
 {{< figure src="/images/git-submodules-init-update.png" alt="git submodule documentation section denoting the git submodule init and git submodule update flow" >}}
 
@@ -78,3 +78,8 @@ jobs:
 ```
 
 These updates solved my build issue so I could remove the `public` directory from source control and can deploy with minimal fuss!
+
+## References
+
+- [ammiranda.com source](https://github.com/ammiranda/ammiranda.com)
+- [theme source](https://github.com/ammiranda/hugo-coder)
