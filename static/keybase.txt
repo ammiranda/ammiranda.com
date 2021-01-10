@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/amiranda
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ammiranda.com
+  * I am amiranda (https://keybase.io/amiranda) on keybase.
+  * I have a public key ASB8f_PysCIYiN8y0JZBQ5ZYkfxbqK4ruij_X1er1VNTtAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207c7ff3f2b0221888df32d0964143965891fc5ba8ae2bba28ff5f57abd55353b40a",
+      "host": "keybase.io",
+      "kid": "01207c7ff3f2b0221888df32d0964143965891fc5ba8ae2bba28ff5f57abd55353b40a",
+      "uid": "51120323bd60944e77b0d87336bb4219",
+      "username": "amiranda"
+    },
+    "merkle_root": {
+      "ctime": 1610240028,
+      "hash": "d3fc9a6edffa864128ff58478871f98576dd20cef732a7dfd71e574b8c4fa8b0e26ac46f95f617c994c11362095a2b6ebcf14d693b6c357ffb0dfca23d3a612d",
+      "hash_meta": "805ea11099d2ddc050b0197cff853082ed4cc1e302a8487357121a8eee4f5b5e",
+      "seqno": 18668225
+    },
+    "service": {
+      "entropy": "8r+cLkCx4L8SgPH9KJP9l9ZN",
+      "hostname": "ammiranda.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1610240044,
+  "expire_in": 504576000,
+  "prev": "f2697dac9454b8a3b881f311e14825b7ed010086a2baa5945102ab6273ef901b",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgfH/z8rAiGIjfMtCWQUOWWJH8W6iuK7oo/19Xq9VTU7QKp3BheWxvYWTESpcCDsQg8ml9rJRUuKO4gfMR4Uglt+0BAIaiuqWUUQKrYnPvkBvEIEbb6CRqKf/1DT0BFRXW/UG6TOIS4s+H2yAhrFydPlAzAgHCo3NpZ8RAA9Z+KzxHpPNAYaslS/SdUKDaqVo+wI09gCZm1QcW5pVmQcUdNcZc+b9twuKE/FjmTx63zgYoSCj2NRy+kqQfCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGPRTJ8erQQKxytUF6EMF2zvHgZqUMRCV3X2QTHjv4v4o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/amiranda
+
+==================================================================
