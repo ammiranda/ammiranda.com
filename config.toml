@@ -110,6 +110,12 @@ pygmentsCodeFencesGuessSyntax = true
 	url = "https://www.linkedin.com/in/alexmmiranda"
 	target="_blank"
 [[params.social]]
+	name = "Keybase"
+	icon = "fab fa-keybase"
+	weight = 6
+	url = "https://keybase.io/amiranda"
+	target = "_blank"
+[[params.social]]
 	name = "Email"
 	icon = "fa fa-envelope"
 	weight = 6
