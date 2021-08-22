@@ -52,7 +52,7 @@ dev-clean: dev-down
 	docker-compose -f ./docker-compose.yml rm -f
 ```
 
-`dev-up` will bring the application up in a docker container with the application live listening to your local machine's 8080 port.
+`dev-up` will bring the application up in a docker container with the application live listening to the host machine's 8080 port.
 
 `dev-down` will stop the application's container(s).
 
