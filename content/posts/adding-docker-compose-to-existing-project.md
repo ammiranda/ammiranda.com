@@ -33,7 +33,7 @@ services:
       - PORT=80
 ```
 
-The version field is specifying the [`docker-compose` file format version](](https://docs.docker.com/compose/compose-file/) to use when parsing the yaml file. 3.8 is the latest file format version at the time of this writing.
+The version field is specifying the [`docker-compose` file format version](https://docs.docker.com/compose/compose-file/) to use when parsing the yaml file. 3.8 is the latest file format version at the time of this writing.
 
 The services' section is what is used to specify all of the containers needed for the application. For this example the API is just one container which is defined by the Dockerfile in the repository whose path is defined in the yaml file in the `dockerfile` field (shown at [`./Dockerfile`](https://github.com/ammiranda/timeserver/blob/master/Dockerfile)). The ports section specifies what ports to expose both within the container and what external ports are exposed outside the container. The environment section allows for the setting of environmental variables that will be set within the container. For this example, I just need to set the `PORT` environmental variable because that is what [Gin uses](https://github.com/gin-gonic/gin/blob/4e7584175d7f2b4245249e769110fd1df0d779db/utils.go#L142) to determine what port it will listen to when running the server. I set the value to 80 because the ports section specifies the internal port exposed is also 80 and will expose to port 8080 outside the container.
 
