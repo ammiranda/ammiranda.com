@@ -1,6 +1,6 @@
 +++ 
 date = "2021-08-22"
-title = "Adding docker-compose to Existing Project"
+title = "Adding `docker-compose` To An Existing Project"
 description = "Example of adding docker-compose to an existing api project"
 tags = ["docker", "docker-compose", "dev-ops"]
 type = "posts"
