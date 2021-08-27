@@ -26,9 +26,9 @@ Thankfully I found a [blog post](https://blog.jeremylikness.com/blog/create-cont
 
 I prepared the changes to be given back to the original project's repository after confirming my fork generated the configured CSP for my site. On Github upstreaming changes to the original repo from a fork is very straightforward and easy. I opened a pull request (PR) in the original project specifying the target branch as my fork's master branch `ammiranda:master` and the destination branch as the master branch of the host repository (`luizdepra:master`). The maintainer defined a [PR template](https://github.com/luizdepra/hugo-coder/blob/master/.github/pull_request_template.md) which provided guidelines on how they will accept contributions. I answered all relevant questions, opened the [PR](https://github.com/luizdepra/hugo-coder/pull/504) and waited patiently for the maintainer to give feedback.
 
-The maintainer responded to my PR with a small [request](https://github.com/luizdepra/hugo-coder/pull/504#issuecomment-764776718) to move the location of the `csp.html` template up one level in its current directory. I updated PR with the asked for change and notified the reviewer. They acknowledged my update and merged the PR.
+The maintainer responded to my PR with a small [request](https://github.com/luizdepra/hugo-coder/pull/504#issuecomment-764776718) to move the location of the `csp.html` template up one level in its current directory. I updated PR with the change and notified the reviewer. They acknowledged my update and merged the PR.
 
-I changed the `.gitmodules` file to reference the original theme's repository so my site can benefit from the CSP feature **and** any other future improvements without needing to manually update my fork.
+I changed the `.gitmodules` file in the [ammiranda.com repo](https://github.com/ammiranda/ammiranda.com) to reference the original theme's repository so my site can benefit from the CSP feature **and** any other future improvements without needing to manually update my fork.
 
 ```
 [submodule "themes/hugo-coder"]
@@ -39,3 +39,9 @@ I changed the `.gitmodules` file to reference the original theme's repository so
 ## Final Thoughts
 
 I found it really rewarding to improve a project I personally benefit from and plan to make many more contributions to open source in the future!
+
+## References
+
+- [Adding CSP to Hugo Blog Post](https://blog.jeremylikness.com/blog/create-content-security-policy-csp-in-hugo/)
+- [CSP Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+- [Mozilla Observatory](https://observatory.mozilla.org/)
