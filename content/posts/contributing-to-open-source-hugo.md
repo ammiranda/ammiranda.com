@@ -36,4 +36,6 @@ I changed the `.gitmodules` file to reference the original theme's repository so
 	url = https://github.com/luizdepra/hugo-coder.git
 ```
 
+## Final Thoughts
+
 I found it really rewarding to improve a project I personally benefit from and plan to make many more contributions to open source in the future!
