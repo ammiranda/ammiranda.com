@@ -20,18 +20,16 @@ The application already has a Dockerfile so all that is needed is a `docker-comp
 
 _docker-compose.yml_
 
-```yaml
-version: '3.8'
-services:
-  web:
-    build:
-      context: ./
-      dockerfile: ./Dockerfile
-    ports:
-      - '8080:80'
-    environment:
-      - PORT=80
-```
+    version: '3.8'
+    services:
+    web:
+        build:
+        context: ./
+        dockerfile: ./Dockerfile
+        ports:
+        - '8080:80'
+        environment:
+        - PORT=80
 
 The version field is specifying the [`docker-compose` file format version](https://docs.docker.com/compose/compose-file/) to use when parsing the yaml file. 3.8 is the latest file format version at the time of this writing.
 
@@ -41,16 +39,14 @@ The services' section is what is used to specify all of the containers needed fo
 
 A demonstration of the real power from `docker-compose` is when you can compose the complicated commands into simpler Makefile alias commands. The commands I created for timeserver's Makefile are below:
 
-```makefile
-dev-up:
-	docker-compose -f ./docker-compose.yml up -d
+    dev-up:
+        docker-compose -f ./docker-compose.yml up -d
 
-dev-down:
-	docker-compose -f ./docker-compose.yml down
+    dev-down:
+        docker-compose -f ./docker-compose.yml down
 
-dev-clean: dev-down
-	docker-compose -f ./docker-compose.yml rm -f
-```
+    dev-clean: dev-down
+        docker-compose -f ./docker-compose.yml rm -f
 
 `dev-up` will bring the application up in a docker container with the application live listening to the host machine's 8080 port.
 
