@@ -42,14 +42,14 @@ The services' section is what is used to specify all of the containers needed fo
 A demonstration of the real power from `docker-compose` is when you can compose the complicated commands into simpler Makefile alias commands. The commands I created for timeserver's Makefile are below:
 
 ```makefile
-    dev-up:
-        docker-compose -f ./docker-compose.yml up -d
+dev-up:
+    docker-compose -f ./docker-compose.yml up -d
 
-    dev-down:
-        docker-compose -f ./docker-compose.yml down
+dev-down:
+    docker-compose -f ./docker-compose.yml down
 
-    dev-clean: dev-down
-        docker-compose -f ./docker-compose.yml rm -f
+dev-clean: dev-down
+    docker-compose -f ./docker-compose.yml rm -f
 ```
 
 `dev-up` will bring the application up in a docker container with the application live listening to the host machine's 8080 port.
