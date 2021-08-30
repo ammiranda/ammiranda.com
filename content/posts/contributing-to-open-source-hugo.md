@@ -12,7 +12,7 @@ When creating this site (ammiranda.com) I needed to pick an existing theme (or c
 
 ## Adding a CSP to the Hugo Coder Theme
 
-In order to edit the theme's source code I needed to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the project's [repository](https://github.com/luizdepra/hugo-coder/) which added a local [copy](https://github.com/ammiranda/hugo-coder) to my repositories. I referenced my repository in the `.gitmodules` file in order to validate my changes though inspecting my website's generated markup.
+In order to edit the theme's source code I needed to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the project's [repository](https://github.com/luizdepra/hugo-coder/) which added a local [copy](https://github.com/ammiranda/hugo-coder) to my repositories. I referenced my forked repository in my ammiranda.com project's `.gitmodules` file in order to validate my changes though inspecting my website's generated markup.
 
 ```
 [submodule "themes/hugo-coder"]
@@ -24,7 +24,7 @@ Thankfully I found a [blog post](https://blog.jeremylikness.com/blog/create-cont
 
 ## Contributing CSP Changes to the Original Repository
 
-I prepared the changes to be given back to the original project's repository after confirming my fork generated the configured CSP for my site. On Github upstreaming changes to the original repo from a fork is very straightforward and easy. I opened a pull request (PR) in the original project specifying the target branch as my fork's master branch `ammiranda:master` and the destination branch as the master branch of the host repository (`luizdepra:master`). The maintainer defined a [PR template](https://github.com/luizdepra/hugo-coder/blob/master/.github/pull_request_template.md) which provided guidelines on how they will accept contributions. I answered all relevant questions, opened the [PR](https://github.com/luizdepra/hugo-coder/pull/504) and waited patiently for the maintainer to give feedback.
+I prepared the changes to be given back to the original project's repository after confirming my fork generated the configured CSP for my site. On Github upstreaming changes to the original repo from a fork is very straightforward and easy. I opened a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) (PR) in the original project specifying the target branch as my fork's master branch `ammiranda:master` and the destination branch as the master branch of the host repository (`luizdepra:master`). The maintainer defined a [PR template](https://github.com/luizdepra/hugo-coder/blob/master/.github/pull_request_template.md) which provided guidelines on how they would accept contributions. I answered all the relevant questions, opened the [PR](https://github.com/luizdepra/hugo-coder/pull/504) and waited patiently for the maintainer to give feedback.
 
 The maintainer responded to my PR with a small [request](https://github.com/luizdepra/hugo-coder/pull/504#issuecomment-764776718) to move the location of the `csp.html` template up one level in its current directory. I updated PR with the change and notified the reviewer. They acknowledged my update and merged the PR.
 
