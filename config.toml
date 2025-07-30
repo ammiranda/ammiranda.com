@@ -6,7 +6,8 @@ theme = "hugo-coder"
 
 defaultContentLanguage = "en"
 
-paginate = 20
+[pagination]
+	pagerSize = 20
 
 pygmentsUseClasses = true
 pygmentsCodeFences = true
