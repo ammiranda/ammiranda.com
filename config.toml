@@ -9,9 +9,14 @@ defaultContentLanguage = "en"
 [pagination]
 	pagerSize = 20
 
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-pygmentsCodeFencesGuessSyntax = true
+[markup]
+	[markup.highlight]
+		noClasses = false
+		style = "github-dark"
+
+[markup.goldmark]
+	[markup.goldmark.renderer]
+		unsafe = true
 
 [params]
 	author = "Alex Miranda"
@@ -31,13 +36,14 @@ pygmentsCodeFencesGuessSyntax = true
 
 	enableTwemoji = false
 
-	customCSS = ["css/all.css", "css/syntax.css"]
+	customCSS = []
 
 	customSCSS = []
 
 	customJS = []
 
 [params.csp]
+	connectsrc = ["'self'", "https://www.google-analytics.com"]
 	childsrc = ["'self'"]
 	fontsrc=["'self'",
 		"https://fonts.gstatic.com",
@@ -82,48 +88,48 @@ pygmentsCodeFencesGuessSyntax = true
 
 [[params.social]]
 	name = "Github"
-	icon = "fab fa-github"
+	icon = "fab fa-github fa-2x"
 	weight = 1
 	url = "https://github.com/ammiranda/"
 	target="_blank"
 [[params.social]]
 	name = "Docker"
-	icon = "fab fa-docker"
+	icon = "fab fa-docker fa-2x"
 	weight = 2
 	url = "https://hub.docker.com/u/amiranda"
 	target = "_blank"
 [[params.social]]
 	name = "NPM"
-	icon = "fab fa-npm"
+	icon = "fab fa-npm fa-2x"
 	weight = 3
 	url = "https://www.npmjs.com/~alexmiranda"
 	target = "_blank"
 [[params.social]]
 	name = "Twitter"
-	icon = "fab fa-twitter"
+	icon = "fab fa-twitter fa-2x"
 	weight = 4
 	url = "https://twitter.com/amiranda222"
 	target="_blank"
 [[params.social]]
 	name = "LinkedIn"
-	icon = "fab fa-linkedin"
+	icon = "fab fa-linkedin fa-2x"
 	weight = 5
 	url = "https://www.linkedin.com/in/alexmmiranda"
 	target="_blank"
 [[params.social]]
 	name = "Keybase"
-	icon = "fab fa-keybase"
+	icon = "fab fa-keybase fa-2x"
 	weight = 6
 	url = "https://keybase.io/amiranda"
 	target = "_blank"
 [[params.social]]
 	name = "Email"
-	icon = "fa fa-envelope"
+	icon = "fa fa-envelope fa-2x"
 	weight = 6
 	url = "mailto:alexandermichaelmiranda@gmail.com"
 [[params.social]]
 	name = "RSS"
-	icon = "fa fa-rss"
+	icon = "fa fa-rss fa-2x"
 	weight = 7
 	url = "https://ammiranda.com/index.xml"
 	rel = "alternate"
