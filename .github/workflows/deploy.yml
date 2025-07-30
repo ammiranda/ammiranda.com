@@ -16,7 +16,7 @@ jobs:
       - name: Git submodule update
         run: git submodule update
       - name: Build Hugo
-        uses: lowply/build-hugo@v0.79.0
+        uses: ammiranda/build-hugo@v0.148.2
       - name: Deploy to S3 and Invalidate Cloudfront distro
         uses: ammiranda/s3-sync-cloudfront-invalidate-docker-action@master
         with:
