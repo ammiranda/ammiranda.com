@@ -13,4 +13,4 @@ jobs:
       - name: Git submodule update
         run: git submodule update
       - name: Build Hugo
-        uses: lowply/build-hugo@v0.148.2
+        uses: lowply/build-hugo@v0.148.0
