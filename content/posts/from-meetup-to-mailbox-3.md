@@ -83,7 +83,7 @@ An example event looks like this:
 }
 ```
 
-The Go code reads this file and parses it using encoding/json and github.com/tidwall/gjson, which makes it easy to filter, sort, and slice the data before composing a prompt.
+The Go code reads this file and parses it using `encoding/json` and `github.com/tidwall/gjson`, which makes it easy to filter, sort, and slice the data before composing a prompt.
 
 ---
 
@@ -111,7 +111,7 @@ Since the formatting is done by the model, I can keep the Go code simple and foc
 
 ## 4. Sending Email via SMTP
 
-Once the HTML body is generated, the program uses Go’s net/smtp to connect to the configured SMTP server and send the message.
+Once the HTML body is generated, the program uses Go’s `net/smtp` to connect to the configured SMTP server and send the message.
 
 Key features:
 
