@@ -5,8 +5,10 @@ description = "about"
 type = "default"
 +++
 
-Hi I'm Alex. I am a software engineer that works on the web. I most recently worked at [Persefoni](https://persefoni.com/) building APIs using [Golang](https://golang.org/). I used to develop Go microservices at [iStreamplanet](https://istreamplanet.com/). In other previous roles I have built single page applications (SPAs) using [React](https://reactjs.org/), and [Backbone](https://backbonejs.org/).
+Hi I'm Alex. I build scalable backend systems and APIs that power modern web applications. I currently work at [SailPoint](https://www.sailpoint.com/) as a software engineer, developing identity governance solutions using [Java](https://openjdk.org/) and [Golang](https://golang.org/). 
 
-I love developing cloud based distributed systems for fun and profit. Also I am passionate about data visualization, web privacy/security, artifical intelligence, and decentralized governance (i.e. blockchain). I value clear and concise communication which is a skill I plan to hone by writing content for this site.
+Previously, I built high-performance APIs at [Persefoni](https://persefoni.com/) using Go, and developed microservices architecture at [iStreamplanet](https://istreamplanet.com/). Earlier in my career, I created single-page applications with [React](https://reactjs.org/) and [Backbone](https://backbonejs.org/).
 
-My non-technical interests include travel, reading, photography, cooking and personal fitness.
+I'm passionate about distributed systems, data visualization, web security, artificial intelligence, and emerging technologies like blockchain. Beyond code, I enjoy travel, reading, photography, cooking, and staying fit.
+
+I value clear communication and plan to share insights about technology and software development through this site.
