@@ -1,6 +1,7 @@
 baseURL = "https://ammiranda.com"
 languageCode = "en-us"
 title = "alexmiranda"
+enableRobotsTXT = true
 
 theme = "hugo-coder"
 
